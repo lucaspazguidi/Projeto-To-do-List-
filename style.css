@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(199, 241, 241); /* Cor do fundo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(85, 72, 72); /* Cor de fundo do header */
+    color: white;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+
+main {
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Ajuste para centralizar o conteúdo de tarefas e o input */
+#quadrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os elementos dentro de #quadrado */
+    justify-content: center;
+    gap: 20px; /* Espaço entre o input e a lista de tarefas */
+}
+
+#adicionar-tarefa {
+    display: flex;
+    align-items: center; /* Alinha o input e o botão de adicionar lado a lado */
+    gap: 10px; /* Espaço entre o input e o botão */
+}
+
+#adicionar-tarefa input[type="text"] {
+    padding: 10px;
+    width: 70%; /* Ajusta o tamanho do input */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#adicionar-tarefa input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(85, 72, 72); /* Cor de fundo do botão */
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#adicionar-tarefa input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Estilo para a lista de tarefas */
+#task-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza as tarefas dentro da lista */
+    gap: 10px; /* Espaço entre as tarefas */
+}
+
+.tarefa {
+    background-color: #f0f0f0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#titulo-tarefas {
+    font-size: 30px;
+}
