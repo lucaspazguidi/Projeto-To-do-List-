@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(116, 124, 124); /* Cor do fundo */
+    background-color: rgb(126, 128, 128); /* Cor do fundo */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,6 +8,7 @@ body {
     height: 100vh;
     margin: 0;
     margin-top: 100px;
+    padding: 20px;
 }
 
 header {
@@ -70,6 +71,7 @@ h1 {
 
 /* Estilo para a lista de tarefas */
 #task-list {
+    border-radius: 50px;
     display: flex;
     flex-direction: column;
     align-items: stretch; /* As tarefas irão se esticar para ocupar toda a largura */
@@ -163,4 +165,61 @@ input[type="text"] {
 input[type="text"]:focus {
     border-color: #ffa500; /* Destaca a borda quando o campo estiver em foco */
     outline: none; /* Remove o contorno padrão ao clicar no input */
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 30px;
+        height: auto;
+    }
+
+    header, main {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    #quadrado {
+        width: 100%;
+        align-items: center; /* Centraliza os elementos */
+        gap: 15px;
+    }
+
+    #adicionar-tarefa {
+        flex-direction: column; /* Empilha os elementos */
+        align-items: center;    /* Centraliza horizontalmente */
+        width: 100%;
+    }
+
+    #adicionar-tarefa input[type="text"],
+    #adicionar-tarefa input[type="submit"] {
+        width: 90%;         /* Ocupa 90% da largura */
+        max-width: 300px;   /* Limita em telas um pouco maiores */
+    }
+
+    #task-list {
+        align-items: center;
+        width: 100%;
+    }
+
+    .tarefa {
+        width: 100%;
+        padding: 12px;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .tarefa button,
+    .tarefa span {
+        margin: 0;
+        width: 80%;
+        max-width: 250px;
+        padding: 8px 0;
+    }
+
+    .tarefa span {
+        display: inline-block;
+    }
 }
