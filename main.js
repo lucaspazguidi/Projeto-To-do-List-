@@ -77,3 +77,15 @@ add.addEventListener("click", function () {
         alert("Por favor, insira uma tarefa!");  // Caso o campo esteja vazio
     }
 });
+const botaoDark = document.getElementById("toggle-dark");
+
+botaoDark.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        // Opcional: muda o texto do botão
+        if (document.body.classList.contains("dark-mode")) {
+            botaoDark.textContent = "☀️ Tema Claro";
+        } else {
+            botaoDark.textContent = "🌙 Tema Escuro";
+        }
+    });

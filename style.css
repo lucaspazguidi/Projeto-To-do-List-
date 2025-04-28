@@ -9,6 +9,8 @@ body {
     margin: 0;
     margin-top: 100px;
     padding: 20px;
+    transition: background-color 0.5s ease;
+
 }
 
 header {
@@ -222,4 +224,77 @@ input[type="text"]:focus {
     .tarefa span {
         display: inline-block;
     }
+}
+/* 🌙 DARK MODE */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode main {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .tarefa {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: white;
+}
+
+body.dark-mode input[type="text"] {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.dark-mode input[type="text"]:focus {
+    border-color: #ffa500;
+}
+
+body.dark-mode #input-tarefa {
+    background-color: #444;
+}
+
+body.dark-mode #botao-concluir {
+    background-color: #388e3c;
+}
+
+body.dark-mode #botao-concluir:hover {
+    background-color: #2e7d32;
+}
+
+body.dark-mode #botao-excluir {
+    background-color: #c62828;
+}
+
+body.dark-mode #botao-excluir:hover {
+    background-color: #b71c1c;
+}
+
+body.dark-mode #botao-editar {
+    background-color: #ff8c00;
+}
+
+body.dark-mode #botao-editar:hover {
+    background-color: #ff7f00;
+}
+#toggle-dark {
+    padding: 10px 20px;
+    margin-bottom: 40px; /* 👉 Espaço abaixo do botão */
+    border-radius: 8px;  /* 👉 Cantos arredondados */
+    border: none;
+    background-color: #444;
+    width: 200px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#toggle-dark:hover {
+    background-color: #666;
 }
