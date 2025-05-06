@@ -282,6 +282,14 @@ body.dark-mode #botao-editar {
 body.dark-mode #botao-editar:hover {
     background-color: #ff7f00;
 }
+body.dark-mode #botao-concluir:disabled{
+    background-color: #cccccc;  /* Cor de fundo quando desabilitado */
+    cursor: not-allowed;  /* Muda o cursor para indicar que o botão não pode ser clicado */
+}
+body.dark-mode #botao-editar:disabled{
+    background-color: #cccccc;  /* Cor de fundo quando desabilitado */
+    cursor: not-allowed;  /* Muda o cursor para indicar que o botão não pode ser clicado */
+}
 #toggle-dark {
     padding: 10px 20px;
     margin-bottom: 40px; /* 👉 Espaço abaixo do botão */
